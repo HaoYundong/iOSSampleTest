@@ -11,5 +11,6 @@
 	<string>软键盘控制</string>
 	<string>横竖屏控制</string>
 	<string>日期选择器</string>
+	<string>ScrollView</string>
 </array>
 </plist>

@@ -12,5 +12,6 @@ There are my some iOS samples in the process of learning.
 * 软键盘控制
 * 横竖屏控制
 * 日期选择器
+* xib中ScrollView约束布局
 
 

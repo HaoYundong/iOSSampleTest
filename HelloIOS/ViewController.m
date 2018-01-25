@@ -17,6 +17,7 @@
 #import "KeyboardViewController.h"
 #import "ScreenViewController.h"
 #import "DatePickerViewController.h"
+#import "ScrollViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -132,6 +133,9 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             break;
         }
         case 9: {
+            ScrollViewController *vc = [[ScrollViewController alloc] init];
+            vc.title = @"ScrollView";
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 10: {
