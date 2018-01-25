@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>动态布局</string>
+	<string>加载中</string>
+	<string>弹窗提示</string>
+	<string>底部弹窗</string>
+	<string>进度条</string>
+	<string>列表</string>
+	<string>软键盘控制</string>
+	<string>横竖屏控制</string>
+</array>
+</plist>
