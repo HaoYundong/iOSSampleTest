@@ -36,6 +36,8 @@
 		158C429A20187BB800466D83 /* pagelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158C429920187BB800466D83 /* pagelist.plist */; };
 		158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C429D201880CD00466D83 /* MainPageTableViewCell.m */; };
 		158C42A0201880CD00466D83 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158C429E201880CD00466D83 /* MainPageTableViewCell.xib */; };
+		15C3A8372019780D00FABF07 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3A8352019780D00FABF07 /* DatePickerViewController.m */; };
+		15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A8362019780D00FABF07 /* DatePickerViewController.xib */; };
 		15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA11F8DC8D60059EAD0 /* SecondLevelViewController.m */; };
 		15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA51F8DC8EB0059EAD0 /* DisclosureButtonController.m */; };
 		15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA81F8DCB040059EAD0 /* DisclosureDetailController.m */; };
@@ -116,6 +118,9 @@
 		158C429C201880CD00466D83 /* MainPageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageTableViewCell.h; sourceTree = "<group>"; };
 		158C429D201880CD00466D83 /* MainPageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTableViewCell.m; sourceTree = "<group>"; };
 		158C429E201880CD00466D83 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
+		15C3A8342019780D00FABF07 /* DatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		15C3A8352019780D00FABF07 /* DatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		15C3A8362019780D00FABF07 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 		15F10D9E1F8DC8830059EAD0 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		15F10D9F1F8DC8830059EAD0 /* teamdictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = teamdictionary.plist; sourceTree = "<group>"; };
 		15F10DA01F8DC8830059EAD0 /* computers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
@@ -250,6 +255,7 @@
 		158C425D2018604500466D83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15C3A833201977CC00FABF07 /* DatePicker */,
 				158C42932018747C00466D83 /* keyboard */,
 				158C4288201872B800466D83 /* Alert */,
 				158C42822018710E00466D83 /* Loading */,
@@ -492,6 +498,16 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		15C3A833201977CC00FABF07 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				15C3A8342019780D00FABF07 /* DatePickerViewController.h */,
+				15C3A8352019780D00FABF07 /* DatePickerViewController.m */,
+				15C3A8362019780D00FABF07 /* DatePickerViewController.xib */,
+			);
+			name = DatePicker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -608,6 +624,7 @@
 				158C4292201873B800466D83 /* ScreenViewController.xib in Resources */,
 				158C428D2018731E00466D83 /* ActionSheetViewController.xib in Resources */,
 				158C429A20187BB800466D83 /* pagelist.plist in Resources */,
+				15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */,
 				1506F34D1F6FBB0400EB059A /* RedViewController.xib in Resources */,
 				156517DB1F8C6B4800521A4B /* NaviTableViewController.xib in Resources */,
 				15FCE4471F70FBBE0033FC72 /* TableViewController.xib in Resources */,
@@ -649,6 +666,7 @@
 				158C427720186C7100466D83 /* DynamicAddViewController.m in Sources */,
 				158C42802018710000466D83 /* LoadingViewController.m in Sources */,
 				15F10DC01F8DCDBF0059EAD0 /* TeamsViewController.m in Sources */,
+				15C3A8372019780D00FABF07 /* DatePickerViewController.m in Sources */,
 				158C428C2018731E00466D83 /* ActionSheetViewController.m in Sources */,
 				156517DA1F8C6B4800521A4B /* NaviTableViewController.m in Sources */,
 				158C4291201873B800466D83 /* ScreenViewController.m in Sources */,

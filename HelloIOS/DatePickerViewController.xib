@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController">
+            <connections>
+                <outlet property="DateView" destination="IVB-eW-TxA" id="lZs-bm-B0j"/>
+                <outlet property="TimeView" destination="mXL-7V-BYN" id="sqV-Fg-Ar5"/>
+                <outlet property="contentView" destination="N4w-Wc-2Eh" id="GnK-2Z-Dwb"/>
+                <outlet property="currentTimeShow" destination="FWw-5N-nYf" id="jUN-t4-81s"/>
+                <outlet property="dateTimeView" destination="BOe-Ho-BUk" id="LRW-N4-fKT"/>
+                <outlet property="scrollView" destination="Skk-my-WfP" id="kOe-WA-Ozj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="774"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-my-WfP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="935"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-Wc-2Eh">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="935"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-eW-TxA">
+                                    <rect key="frame" x="27" y="276" width="320" height="216"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="538540404.17515302">
+                                        <!--2018-01-25 02:33:24 +0000-->
+                                    </date>
+                                </datePicker>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BOe-Ho-BUk">
+                                    <rect key="frame" x="27" y="50" width="320" height="216"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="538540255.31094694">
+                                        <!--2018-01-25 02:30:55 +0000-->
+                                    </date>
+                                </datePicker>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mXL-7V-BYN">
+                                    <rect key="frame" x="27" y="502" width="320" height="216"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="538540477.20609105">
+                                        <!--2018-01-25 02:34:37 +0000-->
+                                    </date>
+                                </datePicker>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CZb-rm-du4">
+                                    <rect key="frame" x="27" y="728" width="320" height="216"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="538540623.25981295">
+                                        <!--2018-01-25 02:37:03 +0000-->
+                                    </date>
+                                </datePicker>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWw-5N-nYf">
+                                    <rect key="frame" x="149" y="10" width="77" height="30"/>
+                                    <state key="normal" title="当时时间："/>
+                                    <connections>
+                                        <action selector="updaDateOrTime:" destination="-1" eventType="touchUpInside" id="skn-Gc-IiQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="IVB-eW-TxA" firstAttribute="centerX" secondItem="N4w-Wc-2Eh" secondAttribute="centerX" id="8QV-wO-tVJ"/>
+                                <constraint firstItem="CZb-rm-du4" firstAttribute="top" secondItem="mXL-7V-BYN" secondAttribute="bottom" constant="10" id="D5Q-Az-rnL"/>
+                                <constraint firstAttribute="height" constant="935" id="RAd-TC-hBJ"/>
+                                <constraint firstItem="FWw-5N-nYf" firstAttribute="centerX" secondItem="N4w-Wc-2Eh" secondAttribute="centerX" id="SrQ-OX-LlT"/>
+                                <constraint firstItem="IVB-eW-TxA" firstAttribute="top" secondItem="BOe-Ho-BUk" secondAttribute="bottom" constant="10" id="WS9-RG-X4W"/>
+                                <constraint firstItem="mXL-7V-BYN" firstAttribute="top" secondItem="IVB-eW-TxA" secondAttribute="bottom" constant="10" id="Y70-a6-4vc"/>
+                                <constraint firstItem="FWw-5N-nYf" firstAttribute="top" secondItem="N4w-Wc-2Eh" secondAttribute="top" constant="10" id="bO2-GH-uWr"/>
+                                <constraint firstItem="mXL-7V-BYN" firstAttribute="centerX" secondItem="N4w-Wc-2Eh" secondAttribute="centerX" id="h3Y-q1-53Y"/>
+                                <constraint firstItem="CZb-rm-du4" firstAttribute="centerX" secondItem="N4w-Wc-2Eh" secondAttribute="centerX" id="kYb-LY-gtq"/>
+                                <constraint firstItem="BOe-Ho-BUk" firstAttribute="centerX" secondItem="N4w-Wc-2Eh" secondAttribute="centerX" id="rNP-yb-6Pv"/>
+                                <constraint firstItem="BOe-Ho-BUk" firstAttribute="top" secondItem="FWw-5N-nYf" secondAttribute="bottom" constant="10" id="wyS-m1-Wy1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="N4w-Wc-2Eh" secondAttribute="trailing" id="1AV-hL-sfB"/>
+                        <constraint firstItem="N4w-Wc-2Eh" firstAttribute="centerX" secondItem="Skk-my-WfP" secondAttribute="centerX" id="T5l-pk-m0i"/>
+                        <constraint firstAttribute="bottom" secondItem="N4w-Wc-2Eh" secondAttribute="bottom" constant="-161" id="XpH-Lt-GoV"/>
+                        <constraint firstItem="N4w-Wc-2Eh" firstAttribute="leading" secondItem="Skk-my-WfP" secondAttribute="leading" id="Zcc-s2-dG2"/>
+                        <constraint firstItem="N4w-Wc-2Eh" firstAttribute="top" secondItem="Skk-my-WfP" secondAttribute="top" id="tSX-fs-wpq"/>
+                        <constraint firstItem="N4w-Wc-2Eh" firstAttribute="centerY" secondItem="Skk-my-WfP" secondAttribute="centerY" id="xRB-o7-eOf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Skk-my-WfP" secondAttribute="trailing" id="9LI-Xz-Mfw"/>
+                <constraint firstItem="Skk-my-WfP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JqK-0A-WSd"/>
+                <constraint firstItem="Skk-my-WfP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UXM-RQ-Nwa"/>
+            </constraints>
+            <point key="canvasLocation" x="16" y="85"/>
+        </view>
+    </objects>
+</document>

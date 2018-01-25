@@ -16,6 +16,7 @@
 #import "TableViewController.h"
 #import "KeyboardViewController.h"
 #import "ScreenViewController.h"
+#import "DatePickerViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -125,6 +126,9 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             break;
         }
         case 8: {
+            DatePickerViewController *vc = [[DatePickerViewController alloc] init];
+            vc.title = @"日期日间选择器";
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 9: {
