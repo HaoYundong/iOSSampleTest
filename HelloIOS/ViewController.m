@@ -18,6 +18,7 @@
 #import "ScreenViewController.h"
 #import "DatePickerViewController.h"
 #import "ScrollViewController.h"
+#import "PickerViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -139,6 +140,9 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             break;
         }
         case 10: {
+            PickerViewController *vc = [[PickerViewController alloc] init];
+            vc.title = @"PickerView";
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
     }
