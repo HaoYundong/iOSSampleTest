@@ -43,6 +43,9 @@
 		15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A8362019780D00FABF07 /* DatePickerViewController.xib */; };
 		15C3A83D2019886E00FABF07 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3A83B2019886E00FABF07 /* ScrollViewController.m */; };
 		15C3A83E2019886E00FABF07 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A83C2019886E00FABF07 /* ScrollViewController.xib */; };
+		15F08F3E201EBC5D0009F084 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F08F3C201EBC5D0009F084 /* CollectionViewController.m */; };
+		15F08F3F201EBC5D0009F084 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F08F3D201EBC5D0009F084 /* CollectionViewController.xib */; };
+		15F08F43201EBF910009F084 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F08F42201EBF910009F084 /* EventCollectionViewCell.m */; };
 		15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA11F8DC8D60059EAD0 /* SecondLevelViewController.m */; };
 		15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA51F8DC8EB0059EAD0 /* DisclosureButtonController.m */; };
 		15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DA81F8DCB040059EAD0 /* DisclosureDetailController.m */; };
@@ -133,6 +136,11 @@
 		15C3A83A2019886E00FABF07 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		15C3A83B2019886E00FABF07 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		15C3A83C2019886E00FABF07 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		15F08F3B201EBC5D0009F084 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		15F08F3C201EBC5D0009F084 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		15F08F3D201EBC5D0009F084 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		15F08F41201EBF910009F084 /* EventCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventCollectionViewCell.h; sourceTree = "<group>"; };
+		15F08F42201EBF910009F084 /* EventCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventCollectionViewCell.m; sourceTree = "<group>"; };
 		15F10D9E1F8DC8830059EAD0 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		15F10D9F1F8DC8830059EAD0 /* teamdictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = teamdictionary.plist; sourceTree = "<group>"; };
 		15F10DA01F8DC8830059EAD0 /* computers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
@@ -270,6 +278,7 @@
 		158C425C2018603600466D83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15F08F40201EBF410009F084 /* CollectionView */,
 				158C429B2018805C00466D83 /* Main */,
 			);
 			name = View;
@@ -278,6 +287,7 @@
 		158C425D2018604500466D83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15F08F3A201EBC280009F084 /* CollecctionView */,
 				156E37CD201C85E4004944C6 /* PickerView */,
 				15C3A8392019882C00FABF07 /* Scroll */,
 				15C3A833201977CC00FABF07 /* DatePicker */,
@@ -543,6 +553,25 @@
 			name = Scroll;
 			sourceTree = "<group>";
 		};
+		15F08F3A201EBC280009F084 /* CollecctionView */ = {
+			isa = PBXGroup;
+			children = (
+				15F08F3B201EBC5D0009F084 /* CollectionViewController.h */,
+				15F08F3C201EBC5D0009F084 /* CollectionViewController.m */,
+				15F08F3D201EBC5D0009F084 /* CollectionViewController.xib */,
+			);
+			name = CollecctionView;
+			sourceTree = "<group>";
+		};
+		15F08F40201EBF410009F084 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				15F08F41201EBF910009F084 /* EventCollectionViewCell.h */,
+				15F08F42201EBF910009F084 /* EventCollectionViewCell.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -667,6 +696,7 @@
 				15FCE4471F70FBBE0033FC72 /* TableViewController.xib in Resources */,
 				158C42A0201880CD00466D83 /* MainPageTableViewCell.xib in Resources */,
 				153721861F5CFEC400EDD509 /* Assets.xcassets in Resources */,
+				15F08F3F201EBC5D0009F084 /* CollectionViewController.xib in Resources */,
 				153721841F5CFEC400EDD509 /* Main.storyboard in Resources */,
 				156E37D2201C860B004944C6 /* PickerViewController.xib in Resources */,
 				158C4287201872A700466D83 /* AlertViewController.xib in Resources */,
@@ -699,6 +729,7 @@
 				158C4286201872A700466D83 /* AlertViewController.m in Sources */,
 				15F10DBF1F8DCDBF0059EAD0 /* RowControlsController.m in Sources */,
 				15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */,
+				15F08F43201EBF910009F084 /* EventCollectionViewCell.m in Sources */,
 				15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */,
 				153721811F5CFEC400EDD509 /* ViewController.m in Sources */,
 				158C427720186C7100466D83 /* DynamicAddViewController.m in Sources */,
@@ -710,6 +741,7 @@
 				158C4291201873B800466D83 /* ScreenViewController.m in Sources */,
 				15F10DBC1F8DCDBF0059EAD0 /* NavTableAppDelegate.m in Sources */,
 				158C427B20186F0E00466D83 /* TimerViewController.m in Sources */,
+				15F08F3E201EBC5D0009F084 /* CollectionViewController.m in Sources */,
 				15F10DC11F8DCDBF0059EAD0 /* TeamsDetailController.m in Sources */,
 				158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */,
 				15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */,

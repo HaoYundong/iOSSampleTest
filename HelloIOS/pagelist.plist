@@ -13,5 +13,12 @@
 	<string>日期选择器</string>
 	<string>ScrollView</string>
 	<string>PickerView</string>
+	<string>集合视图</string>
+	<string>自动布局</string>
+	<string>屏幕适配</string>
+	<string>数据持久化</string>
+	<string>网络通信</string>
+	<string>通知</string>
+	<string>CocoaPods</string>
 </array>
 </plist>

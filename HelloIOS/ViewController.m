@@ -19,6 +19,7 @@
 #import "DatePickerViewController.h"
 #import "ScrollViewController.h"
 #import "PickerViewController.h"
+#import "CollectionViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -145,6 +146,13 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 11: {
+            CollectionViewController *vc = [[CollectionViewController alloc] init];
+            vc.title = @"集合视图";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
     }
 }
 

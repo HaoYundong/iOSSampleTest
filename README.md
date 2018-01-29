@@ -14,5 +14,6 @@ There are my some iOS samples in the process of learning.
 * 日期选择器
 * xib中ScrollView约束布局
 * PickerView
+* 集合视图
 
 
