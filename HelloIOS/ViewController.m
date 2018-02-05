@@ -20,6 +20,7 @@
 #import "ScrollViewController.h"
 #import "PickerViewController.h"
 #import "CollectionViewController.h"
+#import "CustomViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -152,7 +153,12 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            
+        case 12: {
+            CustomViewController *vc = [[CustomViewController alloc] init];
+            vc.title = @"自定义View";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
     }
 }
 
