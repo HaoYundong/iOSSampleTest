@@ -7,10 +7,20 @@
 //
 
 #import "SimpleCustomViewController.h"
+#import "SimpleCustomView.h"
+#import "UIView+NibLoading.h"
+#import "ComtomWithNibView.h"
+
+#define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight                        [[UIScreen mainScreen] bounds].size.height
 
 @interface SimpleCustomViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (strong, nonatomic) IBOutlet UIView *sysView;
+@property (strong, nonatomic) IBOutlet UIView *simpleCustomView;
+@property (strong, nonatomic) IBOutlet ComtomWithNibView *nibView;
+
 
 @end
 
@@ -19,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setupView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,14 +37,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupView {
+    [self setupSystemUIView];
+    [self setupSimpleCustomView];
+    [self setupNibView];
 }
-*/
+
+- (void)setupSystemUIView {
+    _sysView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+    _sysView.backgroundColor = [UIColor redColor];
+    [_containerView addSubview:_sysView];
+}
+
+- (void)setupSimpleCustomView {
+    _simpleCustomView = [[SimpleCustomView alloc] initWithFrame:CGRectMake(0, 100, ScreenWidth, 100)];
+    [_containerView addSubview:_simpleCustomView];
+}
+
+- (void)setupNibView {
+    _nibView = [ComtomWithNibView loadInstanceFromNib];
+    _nibView.frame = CGRectMake(0, 200, ScreenWidth, 150);
+    [_containerView addSubview:_nibView];
+}
 
 @end

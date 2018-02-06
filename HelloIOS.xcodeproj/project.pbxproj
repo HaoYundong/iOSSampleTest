@@ -43,6 +43,10 @@
 		158C429A20187BB800466D83 /* pagelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158C429920187BB800466D83 /* pagelist.plist */; };
 		158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C429D201880CD00466D83 /* MainPageTableViewCell.m */; };
 		158C42A0201880CD00466D83 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158C429E201880CD00466D83 /* MainPageTableViewCell.xib */; };
+		15C242B32029BB5F00414639 /* SimpleCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242B22029BB5F00414639 /* SimpleCustomView.m */; };
+		15C242B82029BDD200414639 /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242B72029BDD200414639 /* UIView+NibLoading.m */; };
+		15C242BB2029BE5700414639 /* ComtomWithNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242BA2029BE5700414639 /* ComtomWithNibView.m */; };
+		15C242BD2029BE6B00414639 /* ComtomWithNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C242BC2029BE6B00414639 /* ComtomWithNibView.xib */; };
 		15C3A8372019780D00FABF07 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3A8352019780D00FABF07 /* DatePickerViewController.m */; };
 		15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A8362019780D00FABF07 /* DatePickerViewController.xib */; };
 		15C3A83D2019886E00FABF07 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3A83B2019886E00FABF07 /* ScrollViewController.m */; };
@@ -140,6 +144,15 @@
 		158C429C201880CD00466D83 /* MainPageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageTableViewCell.h; sourceTree = "<group>"; };
 		158C429D201880CD00466D83 /* MainPageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTableViewCell.m; sourceTree = "<group>"; };
 		158C429E201880CD00466D83 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
+		15C242AE2029B75200414639 /* CommonConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonConst.h; sourceTree = "<group>"; };
+		15C242AF2029B80000414639 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		15C242B12029BB5F00414639 /* SimpleCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleCustomView.h; sourceTree = "<group>"; };
+		15C242B22029BB5F00414639 /* SimpleCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCustomView.m; sourceTree = "<group>"; };
+		15C242B62029BDD200414639 /* UIView+NibLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+NibLoading.h"; sourceTree = "<group>"; };
+		15C242B72029BDD200414639 /* UIView+NibLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+NibLoading.m"; sourceTree = "<group>"; };
+		15C242B92029BE5700414639 /* ComtomWithNibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComtomWithNibView.h; sourceTree = "<group>"; };
+		15C242BA2029BE5700414639 /* ComtomWithNibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComtomWithNibView.m; sourceTree = "<group>"; };
+		15C242BC2029BE6B00414639 /* ComtomWithNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComtomWithNibView.xib; sourceTree = "<group>"; };
 		15C3A8342019780D00FABF07 /* DatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		15C3A8352019780D00FABF07 /* DatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		15C3A8362019780D00FABF07 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
@@ -301,6 +314,7 @@
 		158C425C2018603600466D83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15C242B02029BB3C00414639 /* CustomView */,
 				15F08F40201EBF410009F084 /* CollectionView */,
 				158C429B2018805C00466D83 /* Main */,
 			);
@@ -351,6 +365,8 @@
 		158C42602018612200466D83 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				15C242B42029BD8B00414639 /* CustomView */,
+				15C242AC2029B6F500414639 /* Headers */,
 				158C425F2018609900466D83 /* Tool */,
 			);
 			name = Public;
@@ -557,6 +573,44 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		15C242AC2029B6F500414639 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				15C242AE2029B75200414639 /* CommonConst.h */,
+				15C242AF2029B80000414639 /* Headers.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		15C242B02029BB3C00414639 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				15C242B12029BB5F00414639 /* SimpleCustomView.h */,
+				15C242B22029BB5F00414639 /* SimpleCustomView.m */,
+				15C242B92029BE5700414639 /* ComtomWithNibView.h */,
+				15C242BA2029BE5700414639 /* ComtomWithNibView.m */,
+				15C242BC2029BE6B00414639 /* ComtomWithNibView.xib */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		15C242B42029BD8B00414639 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				15C242B52029BDA300414639 /* category */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		15C242B52029BDA300414639 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				15C242B62029BDD200414639 /* UIView+NibLoading.h */,
+				15C242B72029BDD200414639 /* UIView+NibLoading.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
 		15C3A833201977CC00FABF07 /* DatePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,6 +772,7 @@
 				15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */,
 				1506F34D1F6FBB0400EB059A /* RedViewController.xib in Resources */,
 				156517DB1F8C6B4800521A4B /* NaviTableViewController.xib in Resources */,
+				15C242BD2029BE6B00414639 /* ComtomWithNibView.xib in Resources */,
 				15C3A83E2019886E00FABF07 /* ScrollViewController.xib in Resources */,
 				15FCE4471F70FBBE0033FC72 /* TableViewController.xib in Resources */,
 				158C42A0201880CD00466D83 /* MainPageTableViewCell.xib in Resources */,
@@ -759,12 +814,14 @@
 				15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */,
 				153721811F5CFEC400EDD509 /* ViewController.m in Sources */,
 				158C427720186C7100466D83 /* DynamicAddViewController.m in Sources */,
+				15C242BB2029BE5700414639 /* ComtomWithNibView.m in Sources */,
 				158C42802018710000466D83 /* LoadingViewController.m in Sources */,
 				15F10DC01F8DCDBF0059EAD0 /* TeamsViewController.m in Sources */,
 				15C3A8372019780D00FABF07 /* DatePickerViewController.m in Sources */,
 				158C428C2018731E00466D83 /* ActionSheetViewController.m in Sources */,
 				158A8AE0202885EC00C37DDE /* CustomViewController.m in Sources */,
 				156517DA1F8C6B4800521A4B /* NaviTableViewController.m in Sources */,
+				15C242B82029BDD200414639 /* UIView+NibLoading.m in Sources */,
 				158C4291201873B800466D83 /* ScreenViewController.m in Sources */,
 				15F10DBC1F8DCDBF0059EAD0 /* NavTableAppDelegate.m in Sources */,
 				158C427B20186F0E00466D83 /* TimerViewController.m in Sources */,
@@ -782,6 +839,7 @@
 				15FCE4461F70FBBE0033FC72 /* TableViewController.m in Sources */,
 				156E37D1201C860B004944C6 /* PickerViewController.m in Sources */,
 				1537217B1F5CFEC400EDD509 /* main.m in Sources */,
+				15C242B32029BB5F00414639 /* SimpleCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
