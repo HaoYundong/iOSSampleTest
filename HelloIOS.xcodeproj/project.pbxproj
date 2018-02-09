@@ -65,7 +65,6 @@
 		15F10DBF1F8DCDBF0059EAD0 /* RowControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DB31F8DCDBD0059EAD0 /* RowControlsController.m */; };
 		15F10DC01F8DCDBF0059EAD0 /* TeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DB41F8DCDBD0059EAD0 /* TeamsViewController.m */; };
 		15F10DC11F8DCDBF0059EAD0 /* TeamsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F10DB71F8DCDBE0059EAD0 /* TeamsDetailController.m */; };
-		15F9FC19202D84F300877C35 /* NSTimer+FSLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC17202D84F300877C35 /* NSTimer+FSLoop.m */; };
 		15F9FC20202D84FE00877C35 /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC1B202D84FE00877C35 /* FSSegmentTitleView.m */; };
 		15F9FC21202D84FE00877C35 /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC1C202D84FE00877C35 /* FSPageContentView.m */; };
 		15F9FC28202D852600877C35 /* FSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC22202D852500877C35 /* FSBaseViewController.m */; };
@@ -199,8 +198,6 @@
 		15F10DB81F8DCDBE0059EAD0 /* MoveMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveMeController.h; sourceTree = "<group>"; };
 		15F10DB91F8DCDBE0059EAD0 /* TeamsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamsViewController.h; sourceTree = "<group>"; };
 		15F10DBA1F8DCDBF0059EAD0 /* DeleteMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteMeController.h; sourceTree = "<group>"; };
-		15F9FC15202D84F300877C35 /* NSTimer+FSLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+FSLoop.h"; sourceTree = "<group>"; };
-		15F9FC17202D84F300877C35 /* NSTimer+FSLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+FSLoop.m"; sourceTree = "<group>"; };
 		15F9FC1B202D84FE00877C35 /* FSSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
 		15F9FC1C202D84FE00877C35 /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
 		15F9FC1D202D84FE00877C35 /* FSPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPageContentView.h; sourceTree = "<group>"; };
@@ -725,7 +722,6 @@
 		15F9FC12202D84C100877C35 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				15F9FC14202D84DD00877C35 /* FSScrollContentViewLib */,
 				15F9FC13202D84D000877C35 /* FSLoopScrollView */,
 			);
 			name = lib;
@@ -741,15 +737,6 @@
 				15F9FC1B202D84FE00877C35 /* FSSegmentTitleView.m */,
 			);
 			name = FSLoopScrollView;
-			sourceTree = "<group>";
-		};
-		15F9FC14202D84DD00877C35 /* FSScrollContentViewLib */ = {
-			isa = PBXGroup;
-			children = (
-				15F9FC15202D84F300877C35 /* NSTimer+FSLoop.h */,
-				15F9FC17202D84F300877C35 /* NSTimer+FSLoop.m */,
-			);
-			name = FSScrollContentViewLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -925,7 +912,6 @@
 				15C3A8372019780D00FABF07 /* DatePickerViewController.m in Sources */,
 				158C428C2018731E00466D83 /* ActionSheetViewController.m in Sources */,
 				158A8AE0202885EC00C37DDE /* CustomViewController.m in Sources */,
-				15F9FC19202D84F300877C35 /* NSTimer+FSLoop.m in Sources */,
 				15F9FC29202D852600877C35 /* FSScrollContentViewController.m in Sources */,
 				15F9FC33202D853C00877C35 /* FSBottomTableViewCell.m in Sources */,
 				156517DA1F8C6B4800521A4B /* NaviTableViewController.m in Sources */,
