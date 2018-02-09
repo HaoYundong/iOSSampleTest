@@ -39,7 +39,6 @@
     [self setupSystemUIView];
     [self setupSimpleCustomView];
     [self setupNibView];
-    [self setupRelatedToCustomView];
 }
 
 - (void)setupSystemUIView {
@@ -57,10 +56,6 @@
     _nibView = [ComtomWithNibView loadInstanceFromNib];
     _nibView.frame = CGRectMake(0, 200, ScreenWidth, 150);
     [_containerView addSubview:_nibView];
-}
-
-- (void)setupRelatedToCustomView {
-    
 }
 
 @end
