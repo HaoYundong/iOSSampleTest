@@ -30,13 +30,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationController.navigationBar.translucent = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeScrollStatus) name:@"leaveTop" object:nil];
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self setupSubViews];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    self.navigationController.navigationBar.translucent = YES;
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 - (void)setupSubViews
@@ -89,12 +98,11 @@
     if (section == 0) {
         return 0;
     }
-    return 50;
+    return 0.1;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 50) titles:@[@"全部"] delegate:self indicatorType:FSIndicatorTypeEqualTitle];
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    self.titleView = [[FSSegmentTitleView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 0) titles:@[@""] delegate:self indicatorType:FSIndicatorTypeNone];
     self.titleView.backgroundColor = [UIColor lightGrayColor];
     return self.titleView;
 }
@@ -102,7 +110,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *FSBaseTopTableViewCellIdentifier = @"FSBaseTopTableViewCellIdentifier";
-    static NSString *FSBaselineTableViewCellIdentifier = @"FSBaselineTableViewCellIdentifier";
     if (indexPath.section == 1) {
         _contentCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (!_contentCell) {
