@@ -21,6 +21,7 @@
 #import "PickerViewController.h"
 #import "CollectionViewController.h"
 #import "CustomViewController.h"
+#import "HybridScrollViewViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -159,6 +160,13 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 13: {
+            HybridScrollViewViewController *vc = [[HybridScrollViewViewController alloc] init];
+            vc.title = @"Scroll套Table";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
     }
 }
 

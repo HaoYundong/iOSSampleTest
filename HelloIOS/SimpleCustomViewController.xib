@@ -22,7 +22,21 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wec-7j-26D">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-Fr-ICx" customClass="SimpleCustomView">
+                            <rect key="frame" x="0.0" y="300" width="375" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="1BD-uV-Fo1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bR9-Fr-ICx" firstAttribute="leading" secondItem="wec-7j-26D" secondAttribute="leading" id="6So-cH-nfC"/>
+                        <constraint firstAttribute="trailing" secondItem="bR9-Fr-ICx" secondAttribute="trailing" id="Aho-4K-b1n"/>
+                        <constraint firstItem="bR9-Fr-ICx" firstAttribute="top" secondItem="wec-7j-26D" secondAttribute="top" constant="300" id="JRl-3Z-Qck"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
