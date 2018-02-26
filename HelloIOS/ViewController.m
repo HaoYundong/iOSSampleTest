@@ -72,6 +72,7 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
 #pragma mark -  private methods
 
 - (void)setupUI {
+    self.tableView.showsVerticalScrollIndicator = NO;
     [self.tableView registerNib:[UINib nibWithNibName:kMainPageTableViewCell bundle:nil] forCellReuseIdentifier:kMainPageTableViewCell];
     [self.tableView reloadData];
 }
