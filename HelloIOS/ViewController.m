@@ -23,6 +23,7 @@
 #import "CustomViewController.h"
 #import "FSBaseViewController.h"
 #import "AutoLayoutSampleViewController.h"
+#import "ShapeSampleViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -174,6 +175,13 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 15: {
+            ShapeSampleViewController *vc = [[ShapeSampleViewController alloc] init];
+            vc.title = @"图形";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
     }
 }
 
