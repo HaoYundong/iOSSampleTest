@@ -51,6 +51,8 @@
 		15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A8362019780D00FABF07 /* DatePickerViewController.xib */; };
 		15C3A83D2019886E00FABF07 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C3A83B2019886E00FABF07 /* ScrollViewController.m */; };
 		15C3A83E2019886E00FABF07 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C3A83C2019886E00FABF07 /* ScrollViewController.xib */; };
+		15EAB0E42043A6D1006F2E58 /* AutoLayoutSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EAB0E22043A6D1006F2E58 /* AutoLayoutSampleViewController.m */; };
+		15EAB0E52043A6D1006F2E58 /* AutoLayoutSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EAB0E32043A6D1006F2E58 /* AutoLayoutSampleViewController.xib */; };
 		15F08F3E201EBC5D0009F084 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F08F3C201EBC5D0009F084 /* CollectionViewController.m */; };
 		15F08F3F201EBC5D0009F084 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F08F3D201EBC5D0009F084 /* CollectionViewController.xib */; };
 		15F08F43201EBF910009F084 /* EventCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F08F42201EBF910009F084 /* EventCollectionViewCell.m */; };
@@ -168,6 +170,9 @@
 		15C3A83A2019886E00FABF07 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		15C3A83B2019886E00FABF07 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		15C3A83C2019886E00FABF07 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		15EAB0E12043A6D1006F2E58 /* AutoLayoutSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutSampleViewController.h; sourceTree = "<group>"; };
+		15EAB0E22043A6D1006F2E58 /* AutoLayoutSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutSampleViewController.m; sourceTree = "<group>"; };
+		15EAB0E32043A6D1006F2E58 /* AutoLayoutSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutSampleViewController.xib; sourceTree = "<group>"; };
 		15F08F3B201EBC5D0009F084 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		15F08F3C201EBC5D0009F084 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		15F08F3D201EBC5D0009F084 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
@@ -350,6 +355,7 @@
 		158C425D2018604500466D83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				15EAB0DB2043A63C006F2E58 /* AutoLayout */,
 				158A8ADC202885BE00C37DDE /* CustomView */,
 				15F08F3A201EBC280009F084 /* CollecctionView */,
 				156E37CD201C85E4004944C6 /* PickerView */,
@@ -658,6 +664,16 @@
 			name = Scroll;
 			sourceTree = "<group>";
 		};
+		15EAB0DB2043A63C006F2E58 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				15EAB0E12043A6D1006F2E58 /* AutoLayoutSampleViewController.h */,
+				15EAB0E22043A6D1006F2E58 /* AutoLayoutSampleViewController.m */,
+				15EAB0E32043A6D1006F2E58 /* AutoLayoutSampleViewController.xib */,
+			);
+			name = AutoLayout;
+			sourceTree = "<group>";
+		};
 		15F08F3A201EBC280009F084 /* CollecctionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +886,7 @@
 				153721841F5CFEC400EDD509 /* Main.storyboard in Resources */,
 				156E37D2201C860B004944C6 /* PickerViewController.xib in Resources */,
 				158C4287201872A700466D83 /* AlertViewController.xib in Resources */,
+				15EAB0E52043A6D1006F2E58 /* AutoLayoutSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +918,7 @@
 				158C4286201872A700466D83 /* AlertViewController.m in Sources */,
 				15F10DBF1F8DCDBF0059EAD0 /* RowControlsController.m in Sources */,
 				15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */,
+				15EAB0E42043A6D1006F2E58 /* AutoLayoutSampleViewController.m in Sources */,
 				15F08F43201EBF910009F084 /* EventCollectionViewCell.m in Sources */,
 				15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */,
 				153721811F5CFEC400EDD509 /* ViewController.m in Sources */,

@@ -22,6 +22,7 @@
 #import "CollectionViewController.h"
 #import "CustomViewController.h"
 #import "FSBaseViewController.h"
+#import "AutoLayoutSampleViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -166,7 +167,12 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            
+        case 14: {
+            AutoLayoutSampleViewController *vc = [[AutoLayoutSampleViewController alloc] init];
+            vc.title = @"自动布局测试";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
     }
 }
 

@@ -15,5 +15,8 @@ There are my some iOS samples in the process of learning.
 * xib中ScrollView约束布局
 * PickerView
 * 集合视图
+* 自定义View
+* ScrollView套TableView
+* 自动布局
 
 
