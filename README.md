@@ -18,5 +18,7 @@ There are my some iOS samples in the process of learning.
 * 自定义View
 * ScrollView套TableView
 * 自动布局
+* 带圆角背景&圆角边背景
+* 带轮播的公告
 
 

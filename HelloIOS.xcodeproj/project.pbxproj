@@ -19,6 +19,8 @@
 		1537219F1F5CFEC400EDD509 /* HelloIOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1537219E1F5CFEC400EDD509 /* HelloIOSUITests.m */; };
 		156517DA1F8C6B4800521A4B /* NaviTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156517D81F8C6B4800521A4B /* NaviTableViewController.m */; };
 		156517DB1F8C6B4800521A4B /* NaviTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156517D91F8C6B4800521A4B /* NaviTableViewController.xib */; };
+		156563C42050E0BF00EAA21D /* ScrollNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156563C32050E0BF00EAA21D /* ScrollNoticeViewController.m */; };
+		156563C82050E12000EAA21D /* LMJScrollTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 156563C72050E12000EAA21D /* LMJScrollTextView2.m */; };
 		156E37D1201C860B004944C6 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156E37CF201C860B004944C6 /* PickerViewController.m */; };
 		156E37D2201C860B004944C6 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156E37D0201C860B004944C6 /* PickerViewController.xib */; };
 		156E37D4201CD382004944C6 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 156E37D3201CD382004944C6 /* provinces_cities.plist */; };
@@ -121,6 +123,10 @@
 		156517D71F8C6B4800521A4B /* NaviTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NaviTableViewController.h; sourceTree = "<group>"; };
 		156517D81F8C6B4800521A4B /* NaviTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaviTableViewController.m; sourceTree = "<group>"; };
 		156517D91F8C6B4800521A4B /* NaviTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviTableViewController.xib; sourceTree = "<group>"; };
+		156563C22050E0BF00EAA21D /* ScrollNoticeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollNoticeViewController.h; sourceTree = "<group>"; };
+		156563C32050E0BF00EAA21D /* ScrollNoticeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollNoticeViewController.m; sourceTree = "<group>"; };
+		156563C62050E12000EAA21D /* LMJScrollTextView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMJScrollTextView2.h; sourceTree = "<group>"; };
+		156563C72050E12000EAA21D /* LMJScrollTextView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMJScrollTextView2.m; sourceTree = "<group>"; };
 		156E37CE201C860B004944C6 /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		156E37CF201C860B004944C6 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		156E37D0201C860B004944C6 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
@@ -320,6 +326,24 @@
 			path = HelloIOSUITests;
 			sourceTree = "<group>";
 		};
+		156563C12050E07F00EAA21D /* ScrollPublicNotice */ = {
+			isa = PBXGroup;
+			children = (
+				156563C22050E0BF00EAA21D /* ScrollNoticeViewController.h */,
+				156563C32050E0BF00EAA21D /* ScrollNoticeViewController.m */,
+			);
+			name = ScrollPublicNotice;
+			sourceTree = "<group>";
+		};
+		156563C52050E0FB00EAA21D /* LMJScrollTextView2 */ = {
+			isa = PBXGroup;
+			children = (
+				156563C62050E12000EAA21D /* LMJScrollTextView2.h */,
+				156563C72050E12000EAA21D /* LMJScrollTextView2.m */,
+			);
+			name = LMJScrollTextView2;
+			sourceTree = "<group>";
+		};
 		156E37CD201C85E4004944C6 /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +388,7 @@
 		158C425D2018604500466D83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				156563C12050E07F00EAA21D /* ScrollPublicNotice */,
 				15EAB0E72043E536006F2E58 /* ShapeUse */,
 				15EAB0DB2043A63C006F2E58 /* AutoLayout */,
 				158A8ADC202885BE00C37DDE /* CustomView */,
@@ -725,6 +750,7 @@
 		15F9FC0C202D831600877C35 /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				156563C52050E0FB00EAA21D /* LMJScrollTextView2 */,
 				15F9FC0D202D838300877C35 /* FSScrollViewTableViewDemo */,
 			);
 			name = Samples;
@@ -947,6 +973,7 @@
 				1506F34C1F6FBB0400EB059A /* RedViewController.m in Sources */,
 				15F9FC21202D84FE00877C35 /* FSPageContentView.m in Sources */,
 				158C4286201872A700466D83 /* AlertViewController.m in Sources */,
+				156563C82050E12000EAA21D /* LMJScrollTextView2.m in Sources */,
 				15F10DBF1F8DCDBF0059EAD0 /* RowControlsController.m in Sources */,
 				15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */,
 				15EAB0E42043A6D1006F2E58 /* AutoLayoutSampleViewController.m in Sources */,
@@ -970,6 +997,7 @@
 				15F10DBC1F8DCDBF0059EAD0 /* NavTableAppDelegate.m in Sources */,
 				158C427B20186F0E00466D83 /* TimerViewController.m in Sources */,
 				15F08F3E201EBC5D0009F084 /* CollectionViewController.m in Sources */,
+				156563C42050E0BF00EAA21D /* ScrollNoticeViewController.m in Sources */,
 				15F10DC11F8DCDBF0059EAD0 /* TeamsDetailController.m in Sources */,
 				158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */,
 				15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */,

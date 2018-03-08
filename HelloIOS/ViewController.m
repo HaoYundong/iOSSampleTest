@@ -24,6 +24,7 @@
 #import "FSBaseViewController.h"
 #import "AutoLayoutSampleViewController.h"
 #import "ShapeSampleViewController.h"
+#import "ScrollNoticeViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -181,7 +182,12 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            
+        case 16: {
+            ScrollNoticeViewController *vc = [[ScrollNoticeViewController alloc] init];
+            vc.title = @"轮播公告";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
     }
 }
 
