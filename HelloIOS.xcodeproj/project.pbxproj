@@ -45,6 +45,8 @@
 		158C429A20187BB800466D83 /* pagelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 158C429920187BB800466D83 /* pagelist.plist */; };
 		158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 158C429D201880CD00466D83 /* MainPageTableViewCell.m */; };
 		158C42A0201880CD00466D83 /* MainPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158C429E201880CD00466D83 /* MainPageTableViewCell.xib */; };
+		15C13A692085D72E004B3623 /* MBProgressHUD+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C13A682085D72E004B3623 /* MBProgressHUD+Utils.m */; };
+		15C13A702085D935004B3623 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C13A6F2085D935004B3623 /* LoadingView.m */; };
 		15C242B32029BB5F00414639 /* SimpleCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242B22029BB5F00414639 /* SimpleCustomView.m */; };
 		15C242B82029BDD200414639 /* UIView+NibLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242B72029BDD200414639 /* UIView+NibLoading.m */; };
 		15C242BB2029BE5700414639 /* ComtomWithNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C242BA2029BE5700414639 /* ComtomWithNibView.m */; };
@@ -164,6 +166,11 @@
 		158C429C201880CD00466D83 /* MainPageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageTableViewCell.h; sourceTree = "<group>"; };
 		158C429D201880CD00466D83 /* MainPageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTableViewCell.m; sourceTree = "<group>"; };
 		158C429E201880CD00466D83 /* MainPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPageTableViewCell.xib; sourceTree = "<group>"; };
+		15C13A672085D72E004B3623 /* MBProgressHUD+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Utils.h"; sourceTree = "<group>"; };
+		15C13A682085D72E004B3623 /* MBProgressHUD+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Utils.m"; sourceTree = "<group>"; };
+		15C13A6E2085D935004B3623 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		15C13A6F2085D935004B3623 /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		15C13A712085DBEB004B3623 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 		15C242AE2029B75200414639 /* CommonConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonConst.h; sourceTree = "<group>"; };
 		15C242AF2029B80000414639 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		15C242B12029BB5F00414639 /* SimpleCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleCustomView.h; sourceTree = "<group>"; };
@@ -439,6 +446,8 @@
 		158C42602018612200466D83 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				15C13A6C2085D90F004B3623 /* Views */,
+				15C13A6A2085D8C4004B3623 /* Categories */,
 				15C242B42029BD8B00414639 /* CustomView */,
 				15C242AC2029B6F500414639 /* Headers */,
 				158C425F2018609900466D83 /* Tool */,
@@ -647,12 +656,47 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		15C13A6A2085D8C4004B3623 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				15C13A6B2085D8D3004B3623 /* MBProgressHUD */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		15C13A6B2085D8D3004B3623 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				15C13A672085D72E004B3623 /* MBProgressHUD+Utils.h */,
+				15C13A682085D72E004B3623 /* MBProgressHUD+Utils.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		15C13A6C2085D90F004B3623 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15C13A6D2085D918004B3623 /* Loading */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		15C13A6D2085D918004B3623 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				15C13A6E2085D935004B3623 /* LoadingView.h */,
+				15C13A6F2085D935004B3623 /* LoadingView.m */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
 		15C242AC2029B6F500414639 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
 				15C242AE2029B75200414639 /* CommonConst.h */,
 				15C242AF2029B80000414639 /* Headers.h */,
 				15C242BF2029DFBF00414639 /* DesignConst.h */,
+				15C13A712085DBEB004B3623 /* PrefixHeader.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -999,11 +1043,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1083,9 +1129,11 @@
 				156563C42050E0BF00EAA21D /* ScrollNoticeViewController.m in Sources */,
 				15F10DC11F8DCDBF0059EAD0 /* TeamsDetailController.m in Sources */,
 				158C429F201880CD00466D83 /* MainPageTableViewCell.m in Sources */,
+				15C13A692085D72E004B3623 /* MBProgressHUD+Utils.m in Sources */,
 				15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */,
 				15F9FC28202D852600877C35 /* FSBaseViewController.m in Sources */,
 				15F10DBB1F8DCDBF0059EAD0 /* CheckListController.m in Sources */,
+				15C13A702085D935004B3623 /* LoadingView.m in Sources */,
 				15F10DAC1F8DCD640059EAD0 /* RootViewController.m in Sources */,
 				15C3A83D2019886E00FABF07 /* ScrollViewController.m in Sources */,
 				15F9FC31202D853C00877C35 /* FSBaseTopTableViewCell.m in Sources */,

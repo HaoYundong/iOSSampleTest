@@ -8,6 +8,7 @@ target 'HelloIOS' do
   # Pods for HelloIOS
   pod 'AFNetworking', '~> 2.5.0'
   pod 'MBProgressHUD'
+  pod 'Masonry'
  
 
 end
