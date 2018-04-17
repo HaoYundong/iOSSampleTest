@@ -9,9 +9,10 @@
 #import "ScrollNoticeViewController.h"
 #import "LMJScrollTextView2.h"
 
-@interface ScrollNoticeViewController () <LMJScrollTextView2Delegate>{
-    LMJScrollTextView2 * _scrollTextView;
-}
+@interface ScrollNoticeViewController () <LMJScrollTextView2Delegate>
+
+@property (nonatomic, strong)LMJScrollTextView2 * scrollTextView;
+
 @end
 
 @implementation ScrollNoticeViewController
@@ -24,7 +25,7 @@
 }
 
 - (void)setupView {
-    _scrollTextView = [[LMJScrollTextView2 alloc] initWithFrame:CGRectMake(ScreenWidth / 2 - 100, 100, 200, 50)];
+    _scrollTextView = [[LMJScrollTextView2 alloc] initWithFrame:CGRectMake(ScreenWidth / 2 - 100, 100, 200, 25)];
     _scrollTextView.delegate        = self;
     _scrollTextView.backgroundColor = [UIColor grayColor];
     _scrollTextView.textColor       = [UIColor greenColor];
