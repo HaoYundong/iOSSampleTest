@@ -7,10 +7,12 @@
 //
 
 #import "LoadingViewController.h"
+#import "MBProgressHUD.h"
 
 @interface LoadingViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *myActivityView;
 
+@property (strong, nonatomic)MBProgressHUD *hud;
 @end
 
 @implementation LoadingViewController
@@ -18,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,10 +41,23 @@
 */
 
 - (IBAction) loading:(id)sender {
+    
     if ([_myActivityView isAnimating]) {
         [_myActivityView stopAnimating];
+        
     } else {
         [_myActivityView startAnimating];
+    }
+}
+
+- (IBAction)requestNet:(id)sender {
+    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [self performSelector:@selector(finishRequest) withObject:nil afterDelay:3.0];
+}
+
+- (void)finishRequest {
+    if (self.hud) {
+        [self.hud hideAnimated:YES];
     }
 }
 

@@ -81,6 +81,7 @@
 		15F9FC33202D853C00877C35 /* FSBottomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC30202D853C00877C35 /* FSBottomTableViewCell.m */; };
 		15FCE4461F70FBBE0033FC72 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FCE4441F70FBBE0033FC72 /* TableViewController.m */; };
 		15FCE4471F70FBBE0033FC72 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FCE4451F70FBBE0033FC72 /* TableViewController.xib */; };
+		B4B685239D9B8121AA66C5B8 /* Pods_HelloIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133E0BA4817342030F427338 /* Pods_HelloIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133E0BA4817342030F427338 /* Pods_HelloIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1506F3491F6FBB0400EB059A /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
 		1506F34A1F6FBB0400EB059A /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
 		1506F34B1F6FBB0400EB059A /* RedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedViewController.xib; sourceTree = "<group>"; };
@@ -235,6 +237,8 @@
 		15FCE4431F70FBBE0033FC72 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		15FCE4441F70FBBE0033FC72 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		15FCE4451F70FBBE0033FC72 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		59DD8755CC07493CEC9860A5 /* Pods-HelloIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS.release.xcconfig"; sourceTree = "<group>"; };
+		690283D066D7DAF1E97379F7 /* Pods-HelloIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B685239D9B8121AA66C5B8 /* Pods_HelloIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +274,8 @@
 				153721921F5CFEC400EDD509 /* HelloIOSTests */,
 				1537219D1F5CFEC400EDD509 /* HelloIOSUITests */,
 				153721771F5CFEC400EDD509 /* Products */,
+				EC0B63EEA5FCE065CE25A792 /* Pods */,
+				B01967E258217D1217DFDAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -810,6 +817,23 @@
 			name = FSLoopScrollView;
 			sourceTree = "<group>";
 		};
+		B01967E258217D1217DFDAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				133E0BA4817342030F427338 /* Pods_HelloIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0B63EEA5FCE065CE25A792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				690283D066D7DAF1E97379F7 /* Pods-HelloIOS.debug.xcconfig */,
+				59DD8755CC07493CEC9860A5 /* Pods-HelloIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -817,9 +841,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 153721A31F5CFEC400EDD509 /* Build configuration list for PBXNativeTarget "HelloIOS" */;
 			buildPhases = (
+				D792990622B08275E918DD1A /* [CP] Check Pods Manifest.lock */,
 				153721721F5CFEC400EDD509 /* Sources */,
 				153721731F5CFEC400EDD509 /* Frameworks */,
 				153721741F5CFEC400EDD509 /* Resources */,
+				3659FF6218D76A32E7B40468 /* [CP] Embed Pods Frameworks */,
+				B82EC4F7DF1105CBC81B30D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -961,6 +988,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3659FF6218D76A32E7B40468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82EC4F7DF1105CBC81B30D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloIOS/Pods-HelloIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D792990622B08275E918DD1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		153721721F5CFEC400EDD509 /* Sources */ = {
@@ -1158,6 +1241,7 @@
 		};
 		153721A41F5CFEC400EDD509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690283D066D7DAF1E97379F7 /* Pods-HelloIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1171,11 +1255,13 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloIOS/HelloIOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
 		153721A51F5CFEC400EDD509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59DD8755CC07493CEC9860A5 /* Pods-HelloIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1188,6 +1274,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HelloIOS/HelloIOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

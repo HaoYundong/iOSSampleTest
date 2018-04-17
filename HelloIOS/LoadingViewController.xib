@@ -25,8 +25,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </activityIndicatorView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-OW-TUk">
-                    <rect key="frame" x="164" y="284" width="46" height="30"/>
+                    <rect key="frame" x="127" y="128" width="120" height="88"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="加载中">
                         <color key="titleColor" red="0.99215686270000003" green="0.1647058824" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -34,8 +35,19 @@
                         <action selector="loading:" destination="-1" eventType="touchUpInside" id="ZN8-Mx-GwK"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsY-Zu-CcV">
+                    <rect key="frame" x="138" y="451" width="99" height="77"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.52325102280000002" green="0.90739002059999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="请求数据"/>
+                    <connections>
+                        <action selector="requestNet:" destination="-1" eventType="touchUpInside" id="ATQ-Gc-VhF"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.31764705879999999" green="0.52156862749999999" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>
