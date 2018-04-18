@@ -25,6 +25,7 @@
 #import "AutoLayoutSampleViewController.h"
 #import "ShapeSampleViewController.h"
 #import "ScrollNoticeViewController.h"
+#import "AnimationViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -188,6 +189,13 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 17: {
+            AnimationViewController *vc = [[AnimationViewController alloc] init];
+            vc.title = @"动画";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
     }
 }
 

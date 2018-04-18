@@ -24,6 +24,8 @@
 		156E37D1201C860B004944C6 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156E37CF201C860B004944C6 /* PickerViewController.m */; };
 		156E37D2201C860B004944C6 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156E37D0201C860B004944C6 /* PickerViewController.xib */; };
 		156E37D4201CD382004944C6 /* provinces_cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 156E37D3201CD382004944C6 /* provinces_cities.plist */; };
+		1580EB4E208729DE00EC6C1C /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1580EB4C208729DE00EC6C1C /* AnimationViewController.m */; };
+		1580EB4F208729DE00EC6C1C /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1580EB4D208729DE00EC6C1C /* AnimationViewController.xib */; };
 		158A8AE0202885EC00C37DDE /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158A8ADE202885EC00C37DDE /* CustomViewController.m */; };
 		158A8AE1202885EC00C37DDE /* CustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158A8ADF202885EC00C37DDE /* CustomViewController.xib */; };
 		158A8AE5202887A100C37DDE /* SimpleCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158A8AE3202887A100C37DDE /* SimpleCustomViewController.m */; };
@@ -135,6 +137,9 @@
 		156E37CF201C860B004944C6 /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		156E37D0201C860B004944C6 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
 		156E37D3201CD382004944C6 /* provinces_cities.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = provinces_cities.plist; sourceTree = "<group>"; };
+		1580EB4B208729DE00EC6C1C /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		1580EB4C208729DE00EC6C1C /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		1580EB4D208729DE00EC6C1C /* AnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		158A8ADD202885EC00C37DDE /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 		158A8ADE202885EC00C37DDE /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		158A8ADF202885EC00C37DDE /* CustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomViewController.xib; sourceTree = "<group>"; };
@@ -368,6 +373,16 @@
 			name = PickerView;
 			sourceTree = "<group>";
 		};
+		1580EB4A2087297500EC6C1C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1580EB4B208729DE00EC6C1C /* AnimationViewController.h */,
+				1580EB4C208729DE00EC6C1C /* AnimationViewController.m */,
+				1580EB4D208729DE00EC6C1C /* AnimationViewController.xib */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		158A8ADC202885BE00C37DDE /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +417,7 @@
 		158C425D2018604500466D83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1580EB4A2087297500EC6C1C /* Animation */,
 				156563C12050E07F00EAA21D /* ScrollPublicNotice */,
 				15EAB0E72043E536006F2E58 /* ShapeUse */,
 				15EAB0DB2043A63C006F2E58 /* AutoLayout */,
@@ -1002,6 +1018,7 @@
 				158C429A20187BB800466D83 /* pagelist.plist in Resources */,
 				15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */,
 				1506F34D1F6FBB0400EB059A /* RedViewController.xib in Resources */,
+				1580EB4F208729DE00EC6C1C /* AnimationViewController.xib in Resources */,
 				15EAB0EC2043E567006F2E58 /* ShapeSampleViewController.xib in Resources */,
 				156517DB1F8C6B4800521A4B /* NaviTableViewController.xib in Resources */,
 				15C242BD2029BE6B00414639 /* ComtomWithNibView.xib in Resources */,
@@ -1133,6 +1150,7 @@
 				15F10DA61F8DC8EB0059EAD0 /* DisclosureButtonController.m in Sources */,
 				15F9FC28202D852600877C35 /* FSBaseViewController.m in Sources */,
 				15F10DBB1F8DCDBF0059EAD0 /* CheckListController.m in Sources */,
+				1580EB4E208729DE00EC6C1C /* AnimationViewController.m in Sources */,
 				15C13A702085D935004B3623 /* LoadingView.m in Sources */,
 				15F10DAC1F8DCD640059EAD0 /* RootViewController.m in Sources */,
 				15C3A83D2019886E00FABF07 /* ScrollViewController.m in Sources */,
