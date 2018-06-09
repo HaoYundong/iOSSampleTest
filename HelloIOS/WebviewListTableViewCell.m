@@ -7,7 +7,6 @@
 //
 
 #import "WebviewListTableViewCell.h"
-#import "WrapContentWebView.h"
 
 @interface WebviewListTableViewCell()
 
