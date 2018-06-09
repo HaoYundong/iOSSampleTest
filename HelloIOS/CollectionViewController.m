@@ -48,11 +48,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     int num = [_data count] % COL_NUM;
-    if (num == 0) {
-        return [_data count] / COL_NUM;
-    } else {
-        return [_data count] / COL_NUM + 1;
-    }
+    return [_data count] / COL_NUM + num;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -65,7 +61,7 @@
     // 计算下标索引
     NSInteger idx = indexPath.section * COL_NUM + indexPath.row;
     //防止下标越界
-    if (idx > [_data count]) {
+    if (idx >= [_data count]) {
         return cell;
     }
     
@@ -78,7 +74,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     // 计算下标索引
     NSInteger idx = indexPath.section * COL_NUM + indexPath.row;
-    if (idx > [_data count]) {
+    if (idx >= [_data count]) {
         return;
     }
     NSLog(@"选择的item为： %@", [_data objectAtIndex:idx]);

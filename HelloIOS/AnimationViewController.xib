@@ -42,27 +42,33 @@
                         <action selector="moveHorizontal:" destination="-1" eventType="touchUpInside" id="b1G-AC-V8c"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJd-OS-r8R">
-                    <rect key="frame" x="263" y="542" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.2901960784" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucf-mq-VNB">
-                    <rect key="frame" x="164" y="542" width="46" height="30"/>
+                    <rect key="frame" x="156" y="542" width="62" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.2901960784" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button">
+                    <state key="normal" title="暂停动画">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="stopAnim:" destination="-1" eventType="touchUpInside" id="GCB-Xu-Ce7"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-o6-o7S">
                     <rect key="frame" x="30" y="30" width="32" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.91764705879999997" green="0.21176470589999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJd-OS-r8R">
+                    <rect key="frame" x="230" y="542" width="62" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.74901960779999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="继续动画">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="resumeAnim:" destination="-1" eventType="touchUpInside" id="J5A-U3-g6U"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.52325102280000002" green="0.90739002059999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="24.5" y="52.5"/>

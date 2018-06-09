@@ -26,6 +26,7 @@
 #import "ShapeSampleViewController.h"
 #import "ScrollNoticeViewController.h"
 #import "AnimationViewController.h"
+#import "WebviewListViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -192,6 +193,12 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
         case 17: {
             AnimationViewController *vc = [[AnimationViewController alloc] init];
             vc.title = @"动画";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 18: {
+            WebviewListViewController *vc = [[WebviewListViewController alloc] init];
+            vc.title = @"WebviewList";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

@@ -16,6 +16,9 @@
 @interface AnimationViewController () {
     int verticalFlag;
     int horizontalFlag;
+    
+    CGFloat rotateAngle;
+    CGAffineTransform endAngle;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *animView;
@@ -31,6 +34,9 @@
     
     verticalFlag = 1;
     horizontalFlag = 1;
+    
+    [UIView setAnimationCurve:(UIViewAnimationCurveLinear)];
+    endAngle = CGAffineTransformMakeRotation(rotateAngle * (M_PI / 180.0f));
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +45,7 @@
 }
 
 - (IBAction)moveVertical:(id)sender {
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         CGRect frame = self.animView.frame;
         frame.origin.y += 200 * verticalFlag;
         verticalFlag *= -1;
@@ -48,7 +54,7 @@
 }
 
 - (IBAction)moveHorizontal:(id)sender {
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         CGRect frame = self.animView.frame;
         frame.origin.x += 200 * horizontalFlag;
         horizontalFlag *= -1;
@@ -56,13 +62,30 @@
     }];
 }
 
-//- (IBAction)moveVertical:(id)sender {
-//
-//}
-//
-//- (IBAction)moveVertical:(id)sender {
-//
-//}
+- (IBAction)stopAnim:(id)sender {
+    [self pauseLayer:self.animView.layer];
+}
+
+- (IBAction)resumeAnim:(id)sender {
+    [self resumeLayer:self.animView.layer];
+}
+
+//暂停动画
+- (void)pauseLayer:(CALayer*)layer {
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed = 0.0;
+    layer.timeOffset = pausedTime;
+}
+
+//继续layer上面的动画
+-(void)resumeLayer:(CALayer*)layer {
+    CFTimeInterval pausedTime = [layer timeOffset];
+    layer.speed = 1.0;
+    layer.timeOffset = 0.0;
+    layer.beginTime = 0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
+    layer.beginTime = timeSincePause;
+}
 
 
 
