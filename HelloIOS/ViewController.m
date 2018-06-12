@@ -27,6 +27,7 @@
 #import "ScrollNoticeViewController.h"
 #import "AnimationViewController.h"
 #import "WebviewListViewController.h"
+#import "LabelHtmlViewController.h"
 
 
 static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
@@ -202,7 +203,12 @@ static NSString* kMainPageTableViewCell = @"MainPageTableViewCell";
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-            
+        case 19: {
+            LabelHtmlViewController *vc = [[LabelHtmlViewController alloc] init];
+            vc.title = @"LabelHtml";
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
     }
 }
 

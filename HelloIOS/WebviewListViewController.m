@@ -48,7 +48,8 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return UITableViewAutomaticDimension;
+    return [[self.heightDic objectForKey:[NSString stringWithFormat:@"%ld",indexPath.row]] floatValue];
+//    return UITableViewAutomaticDimension;
 }
 
 #pragma mark - private method
@@ -70,7 +71,7 @@
         _tableView.separatorStyle = NO;
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.estimatedRowHeight = 100;
+//        _tableView.estimatedRowHeight = 100;
         [_tableView registerNib:[UINib nibWithNibName:[WebviewListTableViewCell getIdentifier] bundle:nil] forCellReuseIdentifier:[WebviewListTableViewCell getIdentifier]];
         [_tableView registerClass:[WebListTableViewCell class] forCellReuseIdentifier:[WebListTableViewCell getIdentifier]];
     }

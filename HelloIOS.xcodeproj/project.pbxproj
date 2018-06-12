@@ -87,6 +87,8 @@
 		15F9FC2A202D852600877C35 /* FSBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC25202D852500877C35 /* FSBaseTableView.m */; };
 		15F9FC31202D853C00877C35 /* FSBaseTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC2C202D853B00877C35 /* FSBaseTopTableViewCell.m */; };
 		15F9FC33202D853C00877C35 /* FSBottomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9FC30202D853C00877C35 /* FSBottomTableViewCell.m */; };
+		15FC9CF420CB7996008BC0E7 /* LabelHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FC9CF220CB7996008BC0E7 /* LabelHtmlViewController.m */; };
+		15FC9CF520CB7996008BC0E7 /* LabelHtmlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FC9CF320CB7996008BC0E7 /* LabelHtmlViewController.xib */; };
 		15FCE4461F70FBBE0033FC72 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FCE4441F70FBBE0033FC72 /* TableViewController.m */; };
 		15FCE4471F70FBBE0033FC72 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FCE4451F70FBBE0033FC72 /* TableViewController.xib */; };
 		B4B685239D9B8121AA66C5B8 /* Pods_HelloIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133E0BA4817342030F427338 /* Pods_HelloIOS.framework */; };
@@ -257,6 +259,9 @@
 		15F9FC2C202D853B00877C35 /* FSBaseTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBaseTopTableViewCell.m; sourceTree = "<group>"; };
 		15F9FC2F202D853C00877C35 /* FSBottomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBottomTableViewCell.h; sourceTree = "<group>"; };
 		15F9FC30202D853C00877C35 /* FSBottomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBottomTableViewCell.m; sourceTree = "<group>"; };
+		15FC9CF120CB7996008BC0E7 /* LabelHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelHtmlViewController.h; sourceTree = "<group>"; };
+		15FC9CF220CB7996008BC0E7 /* LabelHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelHtmlViewController.m; sourceTree = "<group>"; };
+		15FC9CF320CB7996008BC0E7 /* LabelHtmlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelHtmlViewController.xib; sourceTree = "<group>"; };
 		15FCE4431F70FBBE0033FC72 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		15FCE4441F70FBBE0033FC72 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		15FCE4451F70FBBE0033FC72 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -609,6 +614,9 @@
 		158C426E20186AE700466D83 /* Label */ = {
 			isa = PBXGroup;
 			children = (
+				15FC9CF120CB7996008BC0E7 /* LabelHtmlViewController.h */,
+				15FC9CF220CB7996008BC0E7 /* LabelHtmlViewController.m */,
+				15FC9CF320CB7996008BC0E7 /* LabelHtmlViewController.xib */,
 			);
 			name = Label;
 			sourceTree = "<group>";
@@ -1051,6 +1059,7 @@
 				158C428D2018731E00466D83 /* ActionSheetViewController.xib in Resources */,
 				158C429A20187BB800466D83 /* pagelist.plist in Resources */,
 				15C3A8382019780D00FABF07 /* DatePickerViewController.xib in Resources */,
+				15FC9CF520CB7996008BC0E7 /* LabelHtmlViewController.xib in Resources */,
 				1506F34D1F6FBB0400EB059A /* RedViewController.xib in Resources */,
 				1580EB4F208729DE00EC6C1C /* AnimationViewController.xib in Resources */,
 				151E717B20C9255100F5693A /* WebviewListTableViewCell.xib in Resources */,
@@ -1158,6 +1167,7 @@
 				15F10DBF1F8DCDBF0059EAD0 /* RowControlsController.m in Sources */,
 				15F10DA91F8DCB040059EAD0 /* DisclosureDetailController.m in Sources */,
 				15EAB0E42043A6D1006F2E58 /* AutoLayoutSampleViewController.m in Sources */,
+				15FC9CF420CB7996008BC0E7 /* LabelHtmlViewController.m in Sources */,
 				15F08F43201EBF910009F084 /* EventCollectionViewCell.m in Sources */,
 				15F10DA31F8DC8D60059EAD0 /* SecondLevelViewController.m in Sources */,
 				153721811F5CFEC400EDD509 /* ViewController.m in Sources */,

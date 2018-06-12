@@ -21,5 +21,7 @@ There are my some iOS samples in the process of learning.
 * 带圆角背景&圆角边背景
 * 带轮播的公告
 * 动画
+* WebViewList
+* LabelHtml
 
 
